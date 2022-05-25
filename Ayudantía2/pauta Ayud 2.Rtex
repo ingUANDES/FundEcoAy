@@ -1,0 +1,746 @@
+\documentclass[addpoints,answers]{exam}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{amsmath,amssymb,latexsym,color,graphicx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+%Paquete para graficar
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{color}
+\pgfplotsset{compat=1.8}
+\usepackage{enumerate}
+\usepackage{changes}
+
+%Tiks
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+%This block of commented code translates default words to Spanish
+%-------------------------------------------------------------
+\pointpoints{punto}{puntos}
+\bonuspointpoints{punto extra}{puntos extra}
+
+\totalformat{Pregunta \thequestion: \totalpoints{} puntos}
+
+\chqword{Pregunta}
+\chpgword{Página}
+\chpword{Página}
+\chpword{Puntos}
+\chbpword{Puntos extra}
+\chsword{Puntos obtenidos}
+\chtword{Total}
+
+\footer{}{Página \thepage\ de \numpages}{}
+
+%\boxedpoints
+%-------------------------------------------------------------
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\par\noindent}
+\SolutionEmphasis{\color{blue}}
+
+%Tikz
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+
+
+\begin{document}
+%This code creates the text before the first question
+%-------------------------------------------------------------------
+
+
+\begin{multicols}{2}
+
+\vspace*{0.24cm}
+	\includegraphics[scale=0.3]{FAC_INGYCIEN.jpeg}
+	\begin{center}
+		\textbf{Fundamentos de Economía}\\
+		\textsc{Primer semestre 2022}\\
+		Profesores: Sebastián Cea, Jouseline Salay, Jorge Arenas\\
+		Ayudantes: Antonia Banduc, Vicente Muñoz, Roberto Wittig, Hernán Venegas
+	\end{center}
+
+\end{multicols}
+
+\begin{center}
+
+\sc Pauta Ayudantía 2
+
+\end{center}
+
+
+%Here, the questions begin
+\begin{questions}
+
+%First question below
+\question Suponga que la siguiente tabla resume la economía de un país que produce únicamente dos bienes:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\end{tabular}
+\end{table}
+
+\hfill \break
+\begin{parts}
+
+\part Dibujar la FPP.
+
+\begin{solutionorbox}[4in]
+Para graficar la frontera de posibilidades de producción, basta con realizar un gráfico de 2 dimensiones, un bien por eje. Luego completar incorporando los puntos de producción.
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Computadores v/s Autos},
+    xlabel={Computadores},
+    ylabel={Autos},
+    xmin=0, xmax=10,
+    ymin=0, ymax=10,
+    xtick={0,1,2,3,4,5,6},
+    ytick={0,1,2,3,4,5,6,7,8,9,10},
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (0,10)(1,8)(2,6)(3,3)(4,0)
+    };
+    \legend{FPP}
+    
+\end{axis}
+\end{tikzpicture}
+
+\end{solutionorbox}
+
+
+\part  Si esta economía se encuentra produciendo 1 computador, ¿cuál es el costo de oportunidad
+de comenzar a producir 4 computadores?
+\begin{solutionorbox}
+Al observar el gráfico o la tabla FPP, se observa si la economía produce 1 computador, esta también produce eficientemente 8 autos. Pero, si aumenta la producción de computadores a 4, no se podría producir autos. Por esto, se concluye que el costo de oportunidad de producir de 1 a 4 computadores significa un costo de oportunidad de 8 autos.
+\end{solutionorbox}
+
+\part Calcular el costo de oportunidad del punto C al punto D.
+\begin{solutionorbox}
+Al igual que el caso anterior, al observar la tabla se ditingue que el costo de oportunidad de pasar de producir 2 computadores a 3, significa una disminución de producción de 3 autos. Por lo que el costo de oportunidad en este caso es de 3 autos.
+\end{solutionorbox}
+
+\part ¿El rendimiento es creciente, decreciente o constante?
+\begin{solutionorbox}
+Para distinguir el rendimiento, se debe entender si el costo de oportunidad aumenta, disminuye o es constante durante los distintos puntos de la FPP. 
+\end{solutionorbox}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\textbf{Costo de Oportunidad}        & 0         & 2          & 2          & 3          & 3          \\ \hline
+\textbf{Bienes totales}        & 10         & 9          & 8          & 6          & 4          \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{solutionorbox}
+Como se observa en la tabla, el valor de costos de oportunidad aumenta mientras que los bines totales disminuye. En conclusión, existe un rendimiento decreciente. 
+\end{solutionorbox}
+
+\part ¿Cómo se vería reflejado en la FPP un mejor rendimiento? (mayor producción)
+\begin{solutionorbox}
+Se vería reflejado al existir una menor pendiente vertical.
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Computadores v/s Autos},
+    xlabel={Computadores},
+    ylabel={Autos},
+    xmin=0, xmax=10,
+    ymin=0, ymax=10,
+    xtick={0,1,2,3,4,5,6},
+    ytick={0,1,2,3,4,5,6,7,8,9,10},
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (0,10)(1,8)(2,6)(3,3)(4,0)
+    };
+    \addlegentry{FPP original}
+
+\addplot[color=red,
+    mark=square,
+    ]
+    coordinates {
+    (0,10)(2,8)(4,6)(7,3)(10,0)
+    };
+    \addlegentry{FPP de mayor rendimiento}]   
+\end{axis}
+\end{tikzpicture}
+
+\end{solutionorbox}
+
+\end{parts}
+
+\question Una economía produce solo dos bienes, cobre y vino. Hay solo dos trabajadores y cada uno puede trabajar 10 horas diarias, en esas horas pueden producir 4 libras de cobre, o 6 litros de vino.
+
+
+\begin{parts}
+\part Dibuje la FPP individual y agregada.
+\hfill \break
+\begin{solutionorbox}
+Con FPP individual se hace referencia a graficar la función de 1 trabajador. Ausumiendo linealidad, para poder graficar se necesita encontrar la pendiente. 
+
+$$m=\frac{4}{6}=\frac{2}{3}$$
+$$C: cobre ; V: Vino$$
+$$C=40-\frac{2}{3}\cdot V$$
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Individual},
+    xlabel={Vinos},
+    ylabel={Cobre},
+    xmin=0, xmax=70,
+    ymin=0, ymax=70,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (0,40)(60,0)
+    };
+    \legend{FPP Individual}
+\end{axis}
+\end{tikzpicture}
+
+Para la FPP agregada se incorporan todos los productores de la economía en el contexto. Asumiendo que ambos productores tienen la misma capacidad, se duplican las producciones:
+
+$$C=80-\frac{2}{3}V$$
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Agregada},
+    xlabel={Vinos},
+    ylabel={Cobre},
+    xmin=0, xmax=130,
+    ymin=0, ymax=100,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (0,80)(120,0)
+    };
+    \legend{FPP Agregada}
+\end{axis}
+\end{tikzpicture}
+
+\end{solutionorbox}
+
+\part Si se producen 50 litros de vino y 30 libras de cobre, ¿es eficiente? Si se producen 15 más de cada uno, ¿sería eficiente o alcanzable?
+\begin{solutionorbox}
+Asumiendo producción agregada. Se calcula si el punto de 50 V y 30 C se encuentra en la FPP.
+
+$$C=80-\frac{2}{3}\cdot50 = 46,67 \Rightarrow 46,67 > 30$$
+Debido a que el punto se encuentra debajo de la curva de FPP, este punto es alcanzable pero ineficiente. 
+
+Ahora, si se producen 65 litros de vino y 45 libras de cobre:
+$$C=80-\frac{2}{3}\cdot65 = 36,67 \Rightarrow 36,67 < 45$$
+Debido a que este punto se encuentra sobre la curva de FPP, este es un punto inalcanzable.
+
+\end{solutionorbox}
+
+\part Ahora suponga que los trabajadores tienen capacidades diferentes, el primero puede producir 3 libras de cobre o 7 litros de vino, y el otro puede producir 5 libras de cobre o 4 litros de vino.
+Plantee las FPP individuales y luego la agregada.
+
+\begin{solutionorbox}
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP 3C o 7V},
+    xlabel={Vinos},
+    ylabel={Cobre},
+    xmin=0, xmax=80,
+    ymin=0, ymax=60,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (0,30)(70,0)
+    };
+    \legend{FPP 3C o 7V}
+\end{axis}
+\end{tikzpicture}
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP 5C o 4V},
+    xlabel={Vinos},
+    ylabel={Cobre},
+    xmin=0, xmax=80,
+    ymin=0, ymax=60,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=red,
+    mark=square,
+    ]
+    coordinates {
+    (0,50)(40,0)
+    };
+    \legend{FPP 5C o 4V}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Agregada},
+    xlabel={Vinos},
+    ylabel={Cobre},
+    xmin=0, xmax=120,
+    ymin=0, ymax=100,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=purple,
+    mark=square,
+    ]
+    coordinates {
+    (0,80)(70,50)(110,0)
+    };
+    \legend{FPP agregada}
+\end{axis}
+\end{tikzpicture}
+
+\end{solutionorbox}
+
+\part  Si de la ecuación $x^2+y^2 = 100$ se obtiene la FPP. Explique por qué este ejemplo sería una generalización del caso anterior.
+\begin{solutionorbox}
+Al observar el último gráfico realizado en la pregunta anterior, se logra entender como se comporta una economía en la realidad. No todos los productores tienen las mismas capcacidades, produciendo curvatura en la FPP agregada. Entonces, si se agregan cada vez más productores, se obtendría una función similar a $x^2+y^2 = 100$:
+
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xlabel = {Vinos},
+    ylabel = {Cobre},
+]
+%Below the red parabola is defined
+\addplot [
+    domain=0:10, 
+    samples=100, 
+    color=red,
+]
+{(100-x^2)^(0.5)};
+\addlegendentry{\((100-x^2)^{0.5}\)}
+
+
+\end{axis}
+\end{tikzpicture}
+\end{solutionorbox}
+
+
+\end{parts}
+
+\question Existe una economía que puede prestar servicios de limpieza y producir corbatas, la economía
+en total dispone de 1000 horas de trabajo. El servicio de limpieza les toma ½ hora y producir la
+corbata 5 horas.
+\begin{parts}
+
+\part ¿Cuántos servicios de limpieza se pueden ofrecer si destinan todos los recursos y la fuerza
+laboral sólo a eso?
+
+\begin{solutionorbox}
+$$L: limpieza ; C: corbata$$
+$$1000 \cdot 2 = 2000 corbatas en 1000 horas de trabajo$$
+\end{solutionorbox}
+
+\part ¿Cuántas corbatas se pueden producir si se destinan todos los recursos y la fuerza laboral sólo a
+eso? 
+
+\begin{solutionorbox}
+$$C \Rightarrow 5 \frac{horas}{corbata}$$
+$$\frac{1000 horas}{5\frac{horas}{corbata}}=200 corbatas$$
+\end{solutionorbox}
+
+\part Dibuje la FPP. 
+
+\begin{solutionorbox}
+Asumiendo producción lineal:
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP},
+    xlabel={Limpieza},
+    ylabel={Corbatas},
+    xmin=0, xmax=2100,
+    ymin=0, ymax=210,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (0,200)(2000,0)
+    };
+    \legend{FPP}
+\end{axis}
+\end{tikzpicture}
+
+\end{solutionorbox}
+
+
+\part ¿Qué significa la pendiente de la FPP?
+
+\begin{solutionorbox}
+La pendiente de una FPP significa el costo de oportunidad.
+\end{solutionorbox}
+
+\part Calcule el costo de oportunidad de pasar de 100 a 200 servicios de limpieza.
+
+\begin{solutionorbox}
+Primero, se escribe la función de la FPP:
+$$C=200-\frac{1}{10}L$$
+$$C(L=100)=200-\frac{1}{10}100=190$$
+$$C(L=200)=200-\frac{1}{10}200=180$$
+$$Costo de Oportunidad=190-180=10$$
+
+\end{solutionorbox}
+
+
+\end{parts}
+
+\question Suponga que hay dos países, el país A y el B. Al país A le toma 2 horas laborales producir 1 kg de
+alimentos, y 10 horas laborales producir un computador, mientras que al país B le toma 10 horas
+producir los mismos alimentos y 12 horas producir el mismo computador.
+
+\begin{parts}
+
+\part ¿Qué le diría a alguien que le dice “los habitantes del país A no tienen por que comerciar con los
+del país B, hacen lo mismo mucho más rápido”?
+
+\begin{solutionorbox}
+País A: 
+$$2 hrs \Rightarrow 1 kg alimento$$
+$$10 hrs \Rightarrow 1 computador$$
+
+País B:
+$$10 hrs \Rightarrow 1 kg alimento$$
+$$12 hrs \Rightarrow 1 computador$$
+
+Ventaja absoluta: Habilidad que se tiene para producir un bien usando menos insumos que otro productor.\\
+El país A tiene ventaja absoluta en la producción de ambos productos. \\
+
+Ventaja comparativa: Habilidad para producir un bien con un costo de oportunidad menor que otro productor\\
+El país A al ser tan buen productor por hora, producir un producto en vez de otro en esa hora, produce un gran costo de oportunidad en relación a la cantidad producida. Mientras que el país B no tiene un costo de oportunidad mucho menor.\\
+
+Debido a esto es que al país A, a pesar de tener ventaja absoluta, no tiene una ventaja comparativa superior a B por lo que si les conviene realizar comercio entre ellos.
+
+\end{solutionorbox}
+
+\part  ¿Cuál es el costo de oportunidad de producir 1 kg de alimento para el país A y B? ¿Y de
+vestuario?
+
+\begin{solutionorbox}
+Costo de oportunidad país A: 
+$$1 computador cuesta 5kg de alimento$$
+$$1 kg de alimento cuesta \frac{1}{5} computadores$$
+
+Costo de oportunidad país B:
+$$1 computador cuesta 1,2 kg de alimento$$
+$$1 kg de alimento cuesta 0,833 computadores$$
+
+A tiene ventaja comparativa en alimento mientras que B la tiene en computadores.
+
+\end{solutionorbox}
+
+\end{parts}
+
+
+\question Sean Qo y Qd las ecuaciones de oferta y demanda de un bien X, respectivamente.
+    $$Q_o = 50P-300$$
+    $$Q_d=150-10P$$
+    Calcule el precio y cantidad de equilibrio.
+
+\begin{solutionorbox}
+Para obtener el equilibrio de mercado del bien X, es necesario entender que en el equilibrio  $Q_o = Q_d=Q_{equilibrio}$ y $P_o = P_d=P_{equilibrio}$. Entonces:
+$$Q_o = 50P-300$$
+$$Q_d=150-10P$$
+$$\Rightarrow 150 -10P=50P-300$$
+$$ \leftrightarrow 450=60P$$
+$$ \leftrightarrow 7,5=P_{equilibrio}$$
+$$\Rightarrow Q_o(P_{equilibrio})=Q_d(P_{equilibrio})=150 -10(7,5)=75$$
+
+\end{solutionorbox}
+
+\question Carlos es un entrenador de fútbol que puede entrenar y producir sólo dos posiciones, defensas (D) y mediocampistas (M). Carlos puede producir 15 defensas por mes o 5 mediocampistas por mes.
+
+
+\begin{parts}
+
+\part Escribe la ecuación que describe la producción de Carlos. (Asuma relación lineal)
+
+\begin{solutionorbox}
+Asumiendo linealidad en la producción:
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP},
+    xlabel={Mediocampistas},
+    ylabel={Defensas},
+    xmin=0, xmax=6,
+    ymin=0, ymax=16,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=red,
+    mark=square,
+    ]
+    coordinates {
+    (0,15)(5,0)
+    };
+    \legend{FPP}
+\end{axis}
+\end{tikzpicture}
+
+Entonces, la FPP de Carlos sigue la siguiente función:
+$$D=-3M+15$$
+
+\end{solutionorbox}
+
+\part Suponga que Carlos no está produciendo mediocampistas este mes. ¿Cuál es el costo de oportunidad de aumentar su producción de mediocampistas de 0 a 2?
+
+\begin{solutionorbox}
+$$D(M=0)=-3(0)+15= 15 $$
+$$D(M=2)=-3(2)+15=9 $$
+El costo de oportunidad son 6 defensas.
+
+\end{solutionorbox}
+
+
+\part ¿Cuál es el costo de oportunidad de producir cada defensa?
+
+\begin{solutionorbox}
+Como se menciona la linealidad, el costo de oportunidad será constante a lo largo de toda la producción.
+
+Entonces para encontrar el costo de oportunidad de producir los defensas es necesario entender la producción por el lado de los mediocampistas:
+
+$$D=-3M+15 \leftrightarrow M=-\frac{1}{3}D+5$$
+$$M(D=0)=-\frac{1}{3}(0)+5=5$$
+$$M(D=1)=-\frac{1}{3}(1)+5=5-\frac{1}{3}$$
+$$C.O = 5-\frac{1}{3} - 5= -\frac{1}{3}$$
+El costo de oportunidad de producir cada defensa es de $\frac{1}{3}$ mediocampistas.
+
+\end{solutionorbox}
+
+\part ¿Cuál es el costo de oportunidad de producir cada mediocampista?
+
+\begin{solutionorbox}
+$$D(M=0)=-3(0)+15=15$$
+$$D(M=1)=-3(1)+15=12$$
+$$C.O=15-12=3$$
+El costo de oportunidad de producir cada mediocampistas es de 3 defensas.
+\end{solutionorbox}
+
+\end{parts}
+
+\question En una economía Pablo y Felipe ambos se dedican a la producción de bienes y lo hacen por separado. Ellos cosechan papas y producen carne de ganado. Sus producciones mensuales están dadas por la siguiente tabla:
+    \begin{table}[h!]
+\begin{tabular}{|l|l|l|}
+\hline
+ & \textbf{Producción máxima posible de papas} & \textbf{Producción máxima posible de carne} \\ \hline
+\textbf{Pablo} & 30 kg & 10 kg \\ \hline
+\textbf{Felipe} & 10 kg & 20 kg \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{parts}
+
+\part ¿Quién tiene ventajas comparativas de producción?¿En qué? Demuestre con costos de oportunidad.
+
+\begin{solutionorbox}
+Para encontrar la ventaja comparativa se deben encontrar los costos de oportunidad de ambos productos para ambos productores:\\
+
+\begin{itemize}
+\item Pablo\\
+1 mes = 10kg de carne o 30 kg de papas\\
+10kg de carne = 30 kg de papas\\
+1 C = 3 P\\
+Por cada kg de carne producida el costo de oportunidad es de 3kg de papas\\
+Por cada kg de papas se tiene un costo de oportunidad de 0,33 kg de carne\\
+
+\item Felipe\\
+1 mes = 20kg de carne o 10 kg de papas\\
+20kg de carne = 10 kg de papas\\
+2 C = 1 P\\
+Por cada kg de carne producida el costo de oportunidad es de 0,5 kg de papas\\
+Por cada kg de papas se tiene un costo de oportunidad de 2 kg de carne\\
+\end{itemize}
+
+Entonces Felipe tiene una ventaja comparativa con Pablo en la producción de carne y Pablo tiene una ventaja comparativa en la producción de papas.
+
+\end{solutionorbox}
+
+\part Grafique ambas FPP.
+
+\begin{solutionorbox}
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Pablo},
+    xlabel={kg Carne},
+    ylabel={kg Papas},
+    xmin=0, xmax=30,
+    ymin=0, ymax=40,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=red,
+    mark=square,
+    ]
+    coordinates {
+    (0,30)(10,0)
+    };
+    \legend{FPP Pablo}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[
+    title={FPP Felipe},
+    xlabel={kg Carne},
+    ylabel={kg Papas},
+    xmin=0, xmax=30,
+    ymin=0, ymax=40,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=green,
+    mark=square,
+    ]
+    coordinates {
+    (0,10)(20,0)
+    };
+    \legend{FPP Felipe}
+\end{axis}
+\end{tikzpicture}
+
+\end{solutionorbox}
+
+Asuma que ahora Pablo decide especializarse en la producción de papas,
+
+\part ¿Cuántas papas puede producir ahora de forma mensual?
+
+\begin{solutionorbox}
+La FPP de Pablo sería la siguiente:
+$$P=-3C + 30$$
+$$P(C=0)=30kg de papas$$
+
+\end{solutionorbox}
+
+\part Debido a que ahora Pablo no tiene carne para comer, decide proponerle a Felipe comenzar un comercio de intercambio de productos. Proponga un escenario donde ambos salen beneficiados mejor que en su estado inicial.
+
+\begin{solutionorbox}
+Cualquier escenario donde Pablo le ofresca más kilogramos de papas que el costo de oportunidad de Felipe de producir las papas singificarán mejores escenarios.
+\end{solutionorbox}
+
+\end{parts}
+
+\question Usted gana 100.000 pesos en una rifa. Tiene dos opciones, invertir el dinero en un activo
+que le proporcionará un interés de 5\% en un año más o gastar el dinero hoy en unas zapatillas exclusivas que no tendrán producción nuevamente. ¿ Considerando solo los valores monetarios, cuál es el costo de oportunidad de comprar las zapatillas? Si comprar las zapatillas significan para usted un beneficio sentimental llevado a valor monetario de 50.000, cuál es el costo de oportunidad de invertir el dinero?
+
+\begin{solutionorbox}
+\begin{itemize}
+    \item 5\% de interés en la inversión del activo fijo:\\ 
+$$100.000\cdot0,05=5.000$$
+Costo de oportunidad de comprar las zapatillas es de \$5.000.
+\item invertir = \$105.000 \\
+zapatillas \$150.000 \\
+C.O=105.000-150.000=\$-45.000
+\end{itemize}
+\end{solutionorbox}
+
+\end{questions}
+
+
+\end{document}

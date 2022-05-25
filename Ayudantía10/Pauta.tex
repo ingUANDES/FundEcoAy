@@ -1,0 +1,85 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+%Paquete para graficar
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{color}
+\pgfplotsset{compat=1.8}
+\usepackage{enumerate}
+
+%Tiks
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+
+
+
+\input{Common.tex}
+
+\pagestyle{fancy}
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Large{Ayudantía 10}}\\
+    Ayudantes: Antonia Banduc, Vicente Muñoz, Hernan Venegas, Roberto Witting
+\end{center}
+
+
+
+\section*{Ejercicio 1}
+\noindent \textbf{Impuesto al diesel}. El mercado local de diesel está representado por:
+
+$$Q = \frac{a-P}{12.5}  \hspace{1cm} \text{ y}   \hspace{1cm}   Q = \frac{P-b}{11}$$
+
+\noindent donde $P$ se encuentra en pesos chilenos (\$) por litro de combustible y $Q$ muestra los litros de combustible (en millones) que se transan en este mercado. Actualmente se cobra un impuesto de \$130 por litro de diesel.
+\begin{enumerate}[a)]
+
+\item Se le pide calcular la cantidad Q que se transa después de aplicado el impuesto. Exprese su resultado con dos decimales. [5 puntos]
+
+\textcolor{blue}{Con un impuesto unitario $\tau=$\$130, el precio que observan compradores y vendedores será diferente, tal que $\tau=130=P_c - P_v$ donde $P_c$ es el precio que observan y pagan los consumidores y $P_v$ es el precio que observan y reciben los oferentes por cada litro de combustible. Si se aplica el impuesto sobre los compradores, se tiene $P_c= P_v+\tau$ y reemplazando en la ecuación de la demanda para obtener el nuevo equilibrio:
+$$ \frac{a-P_v-\tau}{12.5}=\frac{P_v-b}{11}$$
+de donde $$P_v = \frac{11a+12.5b-11\tau}{11+12.5}$$
+$$Q^\prime=\frac{a-b-\tau}{23.5}$$
+}
+
+\item  Muestre detalladamente los cálculos del ejercicio anterior. ¿Hay diferencia entre el precio que observan oferentes y demandantes? Si es así, cuál es el precio que observa el productor y cuál es el precio que observa el consumidor? ¿A cuánto asciende la recaudación del gobierno? Si hay pérdida de eficiencia, ¿a cuánto asciende? Grafique. [5 puntos]
+
+\textcolor{blue}{Sí, hay diferencia entre el precio que observan oferentes y demandantes. Por ejemplo, con $a=900$, $b=300$ y $\tau=130$ antes del impuesto el equilibrio estaba dado por $Q_0=25.53$ millones de litros a un precio de $P_0=580.85$ por litro de diésel.  Con el impuesto, el precio que reciben los oferentes por litro es de \$520 ($P_v$), mientras que los consumidores pagan por litro  \$650 ($P_c$) y en el mercado se transa una menor cantidad que asciende a $Q^\prime = 20$ millones. En este caso, la recaudación del gobierno es de \$2.600 millones ($\tau Q^\prime$) y la pérdida de eficiencia es de \$719,1 millones ($\tau (Q_0-Q^\prime)$).
+}
+
+\item En su cálculo, ¿aplicó el impuesto sobre el consumidor o sobre el productor? ¿Sería diferente el resultado si lo aplica al otro lado del mercado? ¿Por qué? Calcule la incidencia del impuesto y relaciónelo con la elasticidad precio propio de las curvas de oferta y demanda [5 puntos]
+
+\textcolor{blue}{El resultado es el mismo independientemente sobre quién se aplique el impuesto, puesto que finalmente la carga fiscal es compartida entre ambas partes del mercado (oferentes y demandantes). Sobre quién recae la mayor parte, depende de la sensibilidad ante los cambios en los precios del diésel (incidencia del impuesto), lo cual se calcula con la elasticidad precio propio de las curvas de oferta y demanda:
+$$|\varepsilon_D | =\frac{\partial Q}{\partial P} \frac{P}{Q}=|\frac{-1}{12.5} \frac{P}{Q}| < \frac{1}{11} \frac{P}{Q}=\frac{\partial Q}{\partial P} \frac{P}{Q}=\varepsilon_S$$
+En este caso, para cualquier par $(Q, P)$, la demanda es siempre más inelástica que la oferta. Es decir, es menos sensible a cambios en precios, lo cual hace que la incidencia fiscal recaiga en mayor medida sobre los consumidores. En este caso, del impuesto unitario de \$130, los consumidores pagan \$69,15 del impuesto por cada litro y los productores \$60,85 por litro.
+}
+\item En la actualidad, hay argumentos a favor de aumentar el impuesto sobre el diésel y otros argumentos a favor de disminuir (al menos temporalmente) ese mismo impuesto. Mencione al menos un argumento que apoye el alza de este impuesto y uno que apoye la disminución del impuesto. Y finalmente, concluya a favor de qué argumento se encuentra usted. [5 puntos]
+
+\textcolor{blue}{Argumentos para incrementar el impuesto: (i) disminuir el efecto de la externalidad negativa de la contaminación que genera su uso, (ii) progresividad del impuesto considerando que las familias de mayores ingresos son las tienen automóvil y hacen uso de este combustible  y (iii) aumentar los ingresos del fisco considerando la necesidad de mayor gasto público por la pandemia. Argumentos para reducir el impuesto de forma temporal: (i) ayudar a las familias que han sufrido reducciones en el ingreso por la actual coyuntura de mayor desempleo, empresas con menores ingresos por medidas de confinamiento, etc. (ii) incentivar la industria de transporte y el traslado en menores costos a otras empresas.
+}
+
+\end{enumerate}
+\end{document}

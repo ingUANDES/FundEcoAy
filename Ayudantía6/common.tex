@@ -1,0 +1,31 @@
+% PAQUETES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{anysize} %Permitir distintas medidas de margenes
+\usepackage{framed}
+\usepackage{fancyhdr}
+\usepackage{float}
+
+
+\fancyhf{}
+\rhead{ING2104 - Fundamentos de Economía\\2022-10\vspace{0.1cm}}
+\lhead{\includegraphics[scale=0.18]{ing.png}}
+\lfoot{\scriptsize abanduc@miuandes.cl}
+\rfoot{\thepage}
+
+\renewcommand{\footrulewidth}{0.25pt}
+
+\addtolength{\headheight}{1.4cm}
+
+
+\newcommand{\evaluationtitle}[2]{
+	% T\'itulo
+	\begin{center}
+	\vspace{1ex}\Large #1\\
+	\vspace{1ex}\small #2
+	\end{center}
+}

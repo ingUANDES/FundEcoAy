@@ -1,0 +1,378 @@
+\documentclass[addpoints,answers]{exam}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{amsmath,amssymb,latexsym,color,graphicx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+%Paquete para graficar
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{color}
+\pgfplotsset{compat=1.8}
+\usepackage{enumerate}
+\usepackage{changes}
+
+%Tiks
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+%This block of commented code translates default words to Spanish
+%-------------------------------------------------------------
+\pointpoints{punto}{puntos}
+\bonuspointpoints{punto extra}{puntos extra}
+
+\totalformat{Pregunta \thequestion: \totalpoints{} puntos}
+
+\chqword{Pregunta}
+\chpgword{Página}
+\chpword{Página}
+\chpword{Puntos}
+\chbpword{Puntos extra}
+\chsword{Puntos obtenidos}
+\chtword{Total}
+
+\footer{}{Página \thepage\ de \numpages}{}
+
+%\boxedpoints
+%-------------------------------------------------------------
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\par\noindent}
+\SolutionEmphasis{\color{blue}}
+
+%Tikz
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+
+
+\begin{document}
+%This code creates the text before the first question
+%-------------------------------------------------------------------
+
+
+\begin{multicols}{2}
+
+\vspace*{0.24cm}
+	\includegraphics[scale=0.3]{FAC_INGYCIEN.jpeg}
+	\begin{center}
+		\textbf{Fundamentos de Economía}\\
+		\textsc{Primer semestre 2022}\\
+		Profesores: Sebastián Cea, Jouseline Salay, Jorge Arenas\\
+		Ayudantes: Antonia Banduc, Vicente Muñoz, Roberto Wittig, Hernán Venegas
+	\end{center}
+
+\end{multicols}
+
+\begin{center}
+
+\sc Ayudantía 7
+
+\end{center}
+
+
+%Here, the questions begin
+\begin{questions}
+
+%First question below
+\question Preguntas de concepto:
+\hfill \break
+\begin{parts}
+
+\part Ubique, en un gráfico de oferta y demanda, el peso muerto producido por un impuesto.
+
+\begin{solutionorbox}
+Por definición el peso muerto es la reducción del excedente total producida por una distorsión del mercado, como lo es un impuesto. En la siguiente figura (ver Figura 3 página 158 Capítulo 8 del Mankiw) podemos ver una representación del fenómeno:
+
+\includegraphics[scale=0.5]{fig1.png}
+
+En esta representación el área $C+E$ es el peso muerto y representa la pérdida de excedente total a causa del impuesto.
+
+\end{solutionorbox}
+
+\part Explique, con apoyo de gráficos,  cómo afecta la elasticidad de la oferta y de la demanda al peso muerto producido por un impuesto.
+
+\begin{solutionorbox}
+\begin{itemize}
+    \item b.1 Peso Muerto en la demanda\\
+    \includegraphics[scale=0.5]{demanda.png}\\
+    Cuando la demanda es elástica, la perdida de peso muerto ocacionada por un impuesto es relativamente mayor que cin una demanda inelástica y el mismo impuesto. (Mateniendo todo lo demás constante)
+    \item b.2 Peso muerto y oferta\\
+    \includegraphics[scale=0.5]{oferta.png}\\
+    Al igual que en la demanda, una oferta inelástica tiene menos peso muerto en relación a una oferta elaástica con el mismo impuesto. (Mateniendo todo lo demás constante)
+    
+\end{itemize}
+\end{solutionorbox}
+
+\part Supongamos que el mercado de botellas de vino tiene las siguientes funciones de oferta y
+demanda:\\
+
+$$Q_o =-200+2P \quad y\quad Q_d=1400-\frac{2}{3}P$$
+
+La cantidad y precio de equilibrio de mercado son $P^*=\$600$ y  $Q^*=1000$. Calcule el peso muerto producido por un impuesto de $400\frac{\$}{botella}$.
+
+\begin{solutionorbox}
+El efecto del impuesto en los precios pagados es independiente de a quién se le hace el cargo (visto en ayudantía anterior).\\
+Para este caso veremos al aplical el impuesto a la demanda.\\
+El precio total pagado por los compradores será $p_v + t$
+donde $p_v$ es el precio recivido por los vendedores y $t$ el impuesto.\\
+
+$$Q_{D}=1400-\frac{2}{3}(p_v +400) ; Q_s = -200+2p_v$$
+Equilibrio:
+$$Q_D=Q_s=Q_e \rightarrow 1400-\frac{2}{3}(p_v +400)= -200+2p_v$$
+$$\leftrightarrow p_v = \$500 ;p_v+t=\$900$$
+$$\rightarrow Q_D=800 ;Q_s=800$$
+\includegraphics[scale=0.8]{pesomuerto.png}\\
+$$Peso&muerto=(900-600)(1000-800)\frac{1}{2}+(600-500)(1000-800)\frac{1}{2}=40000$$
+
+\end{solutionorbox}
+\end{parts}
+
+\question Suponga el mercado de la carne de un país determinado por las siguientes funciones de oferta y demanda:
+
+\[Q_o = -110 + 2P \hspace{0.5cm}  y \hspace{0.5cm} Q_d = 400 - P\]
+\begin{parts}
+\part Calcule el precio y cantidad óptimo de mercado.
+\hfill \break
+\begin{solutionorbox}
+Equilibrio:
+$$Q_D=Q_o=Q_e \rightarrow 400-P= -110+2P$$
+$$\leftrightarrow 510 = 3P$$
+$$\leftrightarrow P = \$170$$
+$$\rightarrow Q_e=230$$
+\end{solutionorbox}
+
+\part Ahora imagine que ese gobierno  luego de varios estudios cree que es conviente aplicar un subsidio de \$210, grafique y calcule que ocurriría en ese mercado.
+
+\begin{solutionorbox}
+Subsidio=$S$
+$$S=P_o - P_D=\$210$$
+
+Despejando los precios de las ecuaciones de oferta y demanda:
+
+$$P_o = \frac{Q}{2}+55$$
+$$P_D = 400-Q$$
+
+Ahora para encontrar la cantidad de mercado con el subsidio:
+$$\rightarrow S = \frac{Q}{2}+55 - 400-Q $$
+$$\leftrightarrow \frac{3}{2}Q-345$$
+$$\leftrightarrow Q_{con subsidio}=370$$
+$$\rightarrow Q_{con subsidio}>Q_e$$
+
+El subsidio produce que los demandantes paguen menos, los productores reciban más y que la cantidad vendida aumente.
+
+\includegraphics[scale=0.8]{subsidio.png}\\
+
+\end{solutionorbox}
+
+\end{parts}
+
+\question Imagine que el mercado del litio está dado por las siguientes funciones de oferta y demanda:
+\[Q_o = 40000 + 2000P \hspace{0.5cm}  y \hspace{0.5cm} Q_d = 160000 -2000P\]
+Pero ahora, para que sea posible la producción de ese litio, existe un costo marginal externo asociado a su producción $CMgE = 0.2Q$
+\begin{parts}
+
+\part Calcule precio y cantidad de equilibrio sin regulación.
+
+\begin{solutionorbox}
+Equilibrio:
+$$Q_D=Q_o=Q_e \rightarrow 160000-2000P= 40000+2000P$$
+$$\leftrightarrow 120000 = 4000P$$
+$$\leftrightarrow P = \$30$$
+$$\rightarrow Q_e=100$$
+\end{solutionorbox}
+
+\part Calcule precio y cantidad de equilibrio óptimos desde el punto de vista social. 
+
+\begin{solutionorbox}
+El costo social es aquel que considera las externalidades de producción o conusmo de un bine o servicio. Las adiciona, de forma cunatitativa, al costo marginal del privado(privado es el mercado):\\
+$$CMgSocial = CMgExternalidad + CMgPrivado$$
+Asumiendo competencia perfecta:\\
+$$P_{oferta} = CMgPrivado$$
+$$P_{oferta}= \frac{Q}{2000}-20=0,0005Q-20=CMgPrivado$$
+Entonces:\\
+$$CMgSocial=0,2Q+0,0005Q-20=0,2005Q-20$$
+También tenemos, asumiendo competencia perfecta:\\
+Valor Marginal Social= $VMgSocial=P_{demanda}$\\
+$$VMgSocial=80-0.0005Q$$
+Existe equilibrio social ocurre cuando el costo marginal social es igual al valor marginal social:\\
+$$CMgSocial=VMgSocial$$
+$$\rightarrow 0,2005Q-20=80-0.0005Q$$
+$$\leftrightarrow Q_{social}=497,5$$
+$$\leftrightarrow VMgSocial(Q=497,5)=80-0,0005(497,5)=798$$
+
+\end{solutionorbox}
+
+\part Calcule el costo social de la solución en la parte a). 
+
+\begin{solutionorbox}
+No se considera un costo externo:\\
+$$CMgSocial=0,2005Q-20$$
+$$CMgSocial(Q=100.000)=20.030$$
+
+El costo social, entonces, será igual al área bajo la curva:\\
+$$Costo Social=(20.030-30)(100.000-497,5)\frac{1}{2}=995.025.000$$
+\end{solutionorbox}
+
+\end{parts}
+
+\question El gobierno de un país quiere subsidiar con \$136 la compra de libros de economía, y para eso decide aplicar un impuesto en el mercado del alcohol. Las funciones de demanda del mercado de los libros son:
+
+\[Q_o = 2P \hspace{0.5cm}  y \hspace{0.5cm} Q_d = 2400 -6P\]
+
+Y las funciones del mercado del alcohol son:
+
+\[Q_o = P \hspace{0.5cm}  y \hspace{0.5cm} Q_d = 2000 - P\]
+\begin{parts}
+\part ¿Cuál debe ser el monto del impuesto a aplicar sobre los alcoholes?
+
+\begin{solutionorbox}[4in]
+El equilibrio en el mercado de libros resulta de $$Q_o=2P^*=2400-6P^*=Q_d$$
+De donde deducimos que $\Sexpr{2+6}P=2400$ por lo que 
+$P^*=\Sexpr{2400/(2+6)}$. Reemplazando $P^*$ tanto en $Q_o$ como en $Q_d$ debe entregarnos la cantidad de equilibrio $Q^*=\Sexpr{2*300}$.
+
+
+%Se puede editar de manera gráfica en el siguiente link
+%https://www.mathcha.io/editor/MwDgWC23ULmHXq7eeefWqLWM2hOmN6P3TMlD21Z
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,256); %set diagram left start at 0, and has height of 256
+
+%Straight Lines [id:da051614930726313846] 
+\draw    (233,207) -- (483.5,208.98) ;
+\draw [shift={(485.5,209)}, rotate = 180.45] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da7620647399507572] 
+\draw    (233,207) -- (234.48,23) ;
+\draw [shift={(234.5,21)}, rotate = 90.46] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da30603088053217253] 
+\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=1.5]    (233,207) -- (405,28) ;
+%Straight Lines [id:da21604467126404114] 
+\draw [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=2.25]    (235,48.5) -- (438,209) ;
+%Straight Lines [id:da6960169626722639] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (320.5,116) -- (321.5,207.5) ;
+%Straight Lines [id:da3496134018667869] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (235.25,116.63) -- (320.5,116) ;
+
+% Text Node
+\draw (168.5,103.13) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle P{^{\ }}^{*} =\ 300$};
+% Text Node
+\draw (311.5,205.63) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle Q{^{\ }}^{*} =600$};
+% Text Node
+\draw (409,24) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$Q_{o}$};
+% Text Node
+\draw (429,171) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,opacity=1 ]  {$Q_{d}$};
+\end{tikzpicture}
+
+El precio con subsidio se puede entender como que el precio de la demanda es el precio de la oferta menos el subsidio:
+
+$$P_d=P_o-136.$$
+
+Reemplazando eso en la demanda tenemos la nueva demanda subsidiada
+
+$$Q_d=2400-6(P_o-136)=\Sexpr{(2400+6*136)}-6P_o.$$
+
+Notar que la pendiente es la misma por lo que equivale a un movimiento en paralelo
+
+Calculando el equilibrio requerimos $Q_d=2400-6(P_o-136)=\Sexpr{(2400+6*136)}-6P_o=2P_o$ que es equivalente a:
+
+$$\Sexpr{(2400+6*136)}=\Sexpr{2+6}P_o\Rightarrow\Sexpr{(2400+6*136)/(2+6)}=P_o$$
+
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,256); %set diagram left start at 0, and has height of 256
+
+%Straight Lines [id:da051614930726313846] 
+\draw    (233,207) -- (483.5,208.98) ;
+\draw [shift={(485.5,209)}, rotate = 180.45] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da7620647399507572] 
+\draw    (233,207) -- (234.48,23) ;
+\draw [shift={(234.5,21)}, rotate = 90.46] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da30603088053217253] 
+\draw [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ][line width=1.5]    (233,207) -- (405,28) ;
+%Straight Lines [id:da21604467126404114] 
+\draw [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=2.25]    (234,48.5) -- (437,209) ;
+%Straight Lines [id:da6960169626722639] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (320.5,116) -- (321.5,207.5) ;
+%Straight Lines [id:da3496134018667869] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (235.25,116.63) -- (320.5,116) ;
+%Straight Lines [id:da305006186298282] 
+\draw [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=2.25]    (258,1.5) -- (461,162) ;
+%Straight Lines [id:da8859662800687254] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (234,78) -- (354.5,80) ;
+%Straight Lines [id:da8945134720231607] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (354.5,80) -- (359.25,208) ;
+%Straight Lines [id:da564079240311929] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (236.38,142) -- (356.88,144) ;
+
+% Text Node
+\draw (168.5,102.13) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle P{^{\ }}^{*} =\ 300$};
+% Text Node
+\draw (275.5,210.63) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle Q^{*} =600$};
+% Text Node
+\draw (409,24) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,opacity=1 ]  {$Q_{o}$};
+% Text Node
+\draw (429,172) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,opacity=1 ]  {$Q_{d}$};
+% Text Node
+\draw (470,135) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,opacity=1 ]  {$Q'_{d} =3216-6P$};
+% Text Node
+\draw (168.5,67.13) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle P^{*'} =\ 402$};
+% Text Node
+\draw (343.5,212) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle Q^{*'} =804$};
+% Text Node
+\draw (170.5,131.13) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle P=\ 266$};
+% Text Node
+\draw (137.44,75.82) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE,rotate=-1.16]  {$\Bigl\{$};
+% Text Node
+\draw (34,100) node [anchor=north west][inner sep=0.75pt]    {$136=\underbrace{P^{*'}-P}_\text{subsidio}$};
+
+
+\end{tikzpicture}
+
+En consecuencia el monto requerido por el subsidio es la cantidad de equilibrio, $804$, multiplicada por el valor del subsidio por unidad transada, $136$, que equivale a un monto de $\Sexpr{format(804*136, scientific=FALSE)}$. Ese monto es necesario recaudar en el mercado de alcoholes a través de un impuesto.
+
+\end{solutionorbox}
+
+
+\end{parts}
+\end{questions}
+
+
+\end{document}

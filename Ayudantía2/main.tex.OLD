@@ -1,0 +1,126 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[spanish]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Ayudantía 2}
+\author{Ayudantes: Antonia Banduc, Vicente Muñoz,
+Roberto Witting y Hernán Venegas
+}
+
+\begin{document}
+\date{22 de Marzo 2022}
+\maketitle
+
+\begin{enumerate}
+    \item Suponga que la siguiente tabla resume la economía de un país que produce únicamente dos bienes: 
+    
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|}
+\hline
+                      & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+\textbf{Computadores} & 0          & 1          & 2          & 3          & 4          \\ \hline
+\textbf{Autos}        & 10         & 8          & 6          & 3          & 0          \\ \hline
+\end{tabular}
+\end{table}
+
+a) Dibujar la FPP.
+
+b) Si esta economía se encuentra produciendo 1 computador, ¿cuál es el costo de oportunidad de comenzar a producir 4 computadores?
+
+c) Calcular el costo de oportunidad del punto C al punto D.
+
+d) ¿El rendimiento es creciente, decreciente o constante?
+
+e) ¿Cómo se vería reflejado en la FPP un mejor rendimiento? (mayor producción)
+
+    \item Una economía produce solo dos bienes, cobre y vino. Hay solo dos trabajadores y cada uno puede trabajar 10 horas diarias, en esas horas pueden producir 4 libras de cobre, o 6 litros de vino.
+
+a) Dibuje la FPP individual y agregada.
+
+b) Si se producen 50 litros de vino y 30 libras de cobre, ¿es eficiente? Si se producen 15 más de cada uno, ¿sería eficiente o alcanzable?
+
+c) Ahora suponga que los trabajadores tienen capacidades diferentes, el primero puede producir 3 libras de cobre o 7 litros de vino, y el otro puede producir 5 libras de cobre o 4 litros de vino.
+Plantee las FPP individuales y luego la agregada.
+
+d) Si de la ecuación $x^2+y^2 = 100$ se obtiene la FPP. Explique por qué este ejemplo sería una generalización del caso anterior.
+
+    \item Existe una economía que puede prestar servicios de limpieza y producir corbatas, la economía
+en total dispone de 1000 horas de trabajo. El servicio de limpieza les toma ½ hora y producir la
+corbata 5 horas.
+a) ¿Cuántos servicios de limpieza se pueden ofrecer si destinan todos los recursos y la fuerza
+laboral sólo a eso?
+b) ¿Cuántas corbatas se pueden producir si se destinan todos los recursos y la fuerza laboral sólo a
+eso?
+c) Dibuje la FPP.
+d) ¿Qué significa la pendiente de la FPP?
+e) Calcule el costo de oportunidad de pasar de 100 a 200 servicios de limpieza.
+    \item Suponga que hay dos países, el país A y el B. Al país A le toma 2 horas laborales producir 1 kg de
+alimentos, y 10 horas laborales producir un computador, mientras que al país B le toma 10 horas
+producir los mismos alimentos y 12 horas producir el mismo computador.
+a) ¿Qué le diría a alguien que le dice “los habitantes del país A no tienen por que comerciar con los
+del país B, hacen lo mismo mucho más rápido”?
+b) ¿Cuál es el costo de oportunidad de producir 1 kg de alimento para el país A y B? ¿Y de
+vestuario?
+c) Dibuje las FPP de los países y comente.
+
+    \item Sean Qo y Qd las ecuaciones de oferta y demanda de un bien X, respectivamente.
+    $$Q_o = 50P-300$$
+    $$Q_d=150-10P$$
+    Calcule el precio y cantidad de equilibrio.
+    
+    \item Carlos es un entrenador de fútbol que puede entrenar y producir sólo dos posiciones, defensas (D) y mediocampistas (M). Carlos puede producir 15 defensas por mes o 5 mediocampistas por mes.
+
+a) Escribe la ecuación que describe la producción de Carlos. (Asuma relación lineal)
+
+b) Suponga que Carlos no está produciendo mediocampistas este mes. ¿Cuál es el costo de oportunidad de aumentar su producción de mediocampistas de 0 a 2?
+
+c) Suponga que Carlos pensaba que iba a necesitar 3 defensas en el próximo mes peroresulta que finalmente necesitaba solo mediocampistas. ¿Cuál es el beneficio en mediocampistas que obtendrá ?
+
+d) ¿Cuál es el costo de oportunidad de producir cada defensa?
+
+e) ¿Cuál es el costo de oportunidad de producir cada mediocampista?
+
+    \item  En una economía Pablo y Felipe ambos se dedican a la producción de bienes y lo hacen por separado. Ellos cosechan papas y producen carne de ganado. Sus producciones mensuales están dadas por la siguiente tabla:
+    \begin{table}[h!]
+\begin{tabular}{|l|l|l|}
+\hline
+ & \textbf{Producción máxima posible de papas} & \textbf{Producción máxima posible de carne} \\ \hline
+\textbf{Pablo} & 30 kg & 10 kg \\ \hline
+\textbf{Felipe} & 10 kg & 20 kg \\ \hline
+\end{tabular}
+\end{table}
+
+a) ¿Quién tiene ventajas comparativas de producción?¿En qué? Demuestre con costos de oportunidad.
+
+b)Grafique ambas FPP.
+
+Asuma que ahora Pablo decide especializarse en la producción de papas,
+
+c) ¿Cuántas papas puede producir ahora de forma mensual?
+
+d) Debido a que ahora Pablo no tiene carne para comer, decide proponerle a Felipe comenzar un comercio de intercambio de productos. Proponga un escenario donde ambos salen beneficiados mejor que en su estado inicial.
+
+
+
+
+    \item Usted gana 100.000 pesos en una rifa. Tiene dos opciones, invertir el dinero en un activo
+que le proporcionará un interés de 5\% en un año más o gastar el dinero hoy en unas zapatillas exclusivas que no tendrán producción nuevamente. ¿ Considerando solo los valores monetarios, cuál es el costo de oportunidad de comprar las zapatillas? Si comprar las zapatillas significan para usted un beneficio sentimental llevado a valor monetario de 50.000, cuál es el costo de oportunidad de invertir el dinero?
+
+
+
+
+\end{enumerate}
+
+\end{document}
