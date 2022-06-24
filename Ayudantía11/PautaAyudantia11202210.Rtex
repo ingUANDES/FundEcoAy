@@ -1,0 +1,241 @@
+\documentclass[addpoints,answers]{exam}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{amsmath,amssymb,latexsym,color,graphicx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+%Paquete para graficar
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{color}
+\pgfplotsset{compat=1.8}
+\usepackage{enumerate}
+\usepackage{changes}
+
+%Tiks
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+%This block of commented code translates default words to Spanish
+%-------------------------------------------------------------
+\pointpoints{punto}{puntos}
+\bonuspointpoints{punto extra}{puntos extra}
+
+\totalformat{Pregunta \thequestion: \totalpoints{} puntos}
+
+\chqword{Pregunta}
+\chpgword{Página}
+\chpword{Página}
+\chpword{Puntos}
+\chbpword{Puntos extra}
+\chsword{Puntos obtenidos}
+\chtword{Total}
+
+\footer{}{Página \thepage\ de \numpages}{}
+
+%\boxedpoints
+%-------------------------------------------------------------
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\par\noindent}
+\SolutionEmphasis{\color{blue}}
+
+%Tikz
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Large{Pauta Ayudantía 11}}\\
+    Ayudantes: Antonia Banduc, Vicente Muñoz, Hernan Venegas, Roberto Witting
+\end{center}
+
+\section*{Ejercicio 1}
+\noindent Preguntas de concepto:
+
+\begin{enumerate}[a)]
+    \item Si los precios no cambian durante un periodo dado, el PIB nominal y el PIB real deberían coincidir. ¿Verdadero o falso?
+    
+    \begin{solutionorbox}
+   
+    VERDADERO. Ambas medidas incluyen cantidad y precio, pero el PIB real toma el precio de un periodo determinado, y el PIB nominal toma en cuenta el precio corriente. Si los precios no cambian entre el periodo de referencia del PIB real y el periodo corriente, entonces ambos coinciden.
+   
+    \end{solutionorbox}
+    
+    \item Un aumento en la población total va a aumentar el PIB per cápita de un país. ¿Verdadero o falso?
+    
+    \begin{solutionorbox}
+     FALSO.  No necesariamente.  Considerando que el $PIB_{pc}=PIB/(Población Total)$ es posible afirmar que un aumento en la población total va a traer como consecuencia una disminución en el PIB pc de un país. Siempre y cuando el PIB se mantenga constante.   
+    
+    \end{solutionorbox}
+    
+    \item El PIB es una medida perfecta del bienestar de las personas. ¿Verdadero o falso?
+    
+    \begin{solutionorbox}
+    FALSO. EL excluye cosas importantes como los tiempos de ocio, los bienes y servicios del hogar y tampoco explica la distribución de riqueza en el país y como ese PIB per capita realmente se destribuye en un ciudadano promedio. Pero, igualmente el PIB es considerado como una buena medida del bienestar económico ya que existe una correlación fuerte entre aquellos países con PIB alto  y buena salud, educación, innovación, entre otros.
+    \end{solutionorbox}
+    
+\end{enumerate}
+
+
+\section*{Ejercicio 2}
+\noindent Imagine que un amigo le pide prestado \$80.000 y le devuelve \$95.000 a final de año. Suponga que la
+inflación ese año fue de 10 \%.
+
+\begin{enumerate}[a)]
+
+\item Calcule la tasa de interés nominal que su amigo le pagaría.
+
+\begin{solutionorbox}
+
+La tasa de interés nominal se mide en valor nominal. Entonces, se debe considerar el precio recibido para calcular la tasa.
+       $$Valor\quad Final = Valor\quad Presente \cdot (1+interés)^{periodos} $$
+       $$\rightarrow 95.000=80.000 \cdot (1+i)^1  $$
+       $$\leftrightarrow i = \frac{95.000}{80.000}-1$$
+       $$\leftrightarrow i=0.1875$$
+       El préstamo tuvo un interés de 18,75\% en valores nominales. 
+\end{solutionorbox}
+    
+
+\item Calcule la tasa de interés real que su amigo le pagaría.
+
+\begin{solutionorbox}
+Considerando que $\pi$ es la inflación:
+       $$i_{real} = i_{nominal} - \pi $$
+       $$i_{real} = 0.0875 = 8,75\% $$
+\end{solutionorbox}
+    
+\item  Si su amigo se demora dos años en pagarle y mantiene la tasa de interés, ¿Cuánto recibiría usted?
+
+\begin{solutionorbox}
+      $$VF = 80.000(1+0.1875)^2 = \$ 112.470$$ 
+\end{solutionorbox}
+    
+\end{enumerate}
+
+
+
+\section*{Ejercicio 3}
+\noindent En una economía, sólo se producen autos y computadores. En la cuál se produjo lo siguiente en los años 2017,2018 y 2019:\\
+
+\begin{table}[h!]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Año & Precio Computadores & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Computadores\end{tabular} & Precio autos & \begin{tabular}[c]{@{}l@{}}Cantidad Producida\\ Autos\end{tabular} \\ \hline
+2017 & 100 & 100 & 200 & 50 \\ \hline
+2018 & 200 & 150 & 300 & 100 \\ \hline
+2019 & 300 & 200 & 400 & 150 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{enumerate}[a)]
+
+\item Calcular el PIB nominal para los años 2017, 2018, 2019.
+
+\begin{solutionorbox}
+$$PIB\quad nominal = Precios\quad Actuales\quad \cdot \quad Cantidades\quad Actuales$$
+\textbf{PIB 2017}
+$$\rightarrow PIB_{nominal2017}=100\cdot100 + 200\cdot50$$
+$$\leftrightarrow PIB_{nominal2017}=\$ 20.000$$
+\textbf{PIB 2018}
+$$\rightarrow PIB_{nominal2018}=200\cdot150 + 300\cdot100$$
+$$\leftrightarrow PIB_{nominal2019}=\$ 60.000$$
+\textbf{PIB 2019}
+$$\rightarrow PIB_{nominal2019}=300\cdot200 + 400\cdot150$$
+$$\leftrightarrow PIB_{nominal2019}=\$ 120.000$$
+
+\end{solutionorbox}
+    
+
+\item  Calcular el PIB real para los mismos años utilizando como año base el 2017.
+
+\begin{solutionorbox}
+$$PIB\quad real = Precios\quad Año\quad Base\quad \cdot \quad Cantidades\quad Actuales$$
+\textbf{PIB 2017}
+$$\rightarrow PIB_{real2017}=100\cdot100 + 200\cdot50$$
+$$\leftrightarrow PIB_{real2017}=\$ 20.000$$
+\textbf{PIB 2018}
+$$\rightarrow PIB_{real2018}=100\cdot150 + 200\cdot100$$
+$$\leftrightarrow PIB_{real2018}=\$ 35.000$$
+\textbf{PIB 2019}
+$$\rightarrow PIB_{real2019}=100\cdot200 + 200\cdot150$$
+$$\leftrightarrow PIB_{real2019}=\$ 50.000$$
+
+\end{solutionorbox}
+    
+\item Calcular el deflactor del PIB para los tres años mencionados anteriormente.
+
+\begin{solutionorbox}
+$$Deflactor\quad del \quad PIB=\frac{PIB\quad nominal}{PIB\quad real}\cdot 100$$
+
+\textbf{Deflactor PIB 2017}
+$$\rightarrow Deflactor\quad PIB_{2017}=\frac{20.000}{20.000}\cdot 100$$
+$$\leftrightarrow Deflactor\quad PIB_{2017}=100\%$$
+\textbf{Deflactor PIB 2018}
+$$\rightarrow Deflactor\quad PIB_{2018}=\frac{60.000}{35.000}\cdot 100$$
+$$\leftrightarrow Deflactor\quad PIB_{2019}=171,42\%$$
+\textbf{Deflactor PIB 2019}
+$$\rightarrow Deflactor\quad PIB_{2019}=\frac{120.000}{50.000}\cdot 100$$
+$$\leftrightarrow Deflactor\quad PIB_{2019}=240\%$$
+\end{solutionorbox}
+    
+\item Calcular la tasa de inflación del mercado, utilizando el año 2017 como base. 
+
+\begin{solutionorbox}
+A pesar de que se utiliza el IPC como principal medida de la inflación, el deflector del PIB puede ser utilizado con el mismo fin. La inflación puede calcularse de la siguiente forma:
+
+\begin{footnotesize}
+$$Tasa\quad de\quad inflación\quad año\quad 2 = \frac{ Deflactor\quad del\quad PIB\quad año\quad 2\quad -\quad Deflactor\quad del\quad PIB\quad año\quad 1}{Deflactor\quad del\quad PIB\quad año\quad 1}\cdot 100$$
+\end{footnotesize}
+
+\textbf{Tasa de inflación 2017}
+$$Tasa\quad de\quad inflación\quad 2017= \frac{100 -100}{100}\cdot 100=0\%$$
+
+\textbf{Tasa de inflación 2018}
+$$Tasa\quad de\quad inflación\quad 2018= \frac{171,42 -100}{100}\cdot 100=71,42\%$$
+
+\textbf{Tasa de inflación 2019}
+$$Tasa\quad de\quad inflación\quad 2019= \frac{240 -100}{100}\cdot 100=140\%$$
+\end{solutionorbox}
+    
+\end{enumerate}
+
+\end{document}
